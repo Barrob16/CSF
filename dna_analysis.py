@@ -55,13 +55,14 @@ total_count = 0
 gc_count = 0
 at_count = 0
 
-# Individual A, T, G, C Nucleotides present.
+# Individual A, T, G, C, N Nucleotides present.
 A_nucleotides = 0
 T_nucleotides = 0
 G_nucleotides = 0
 C_nucleotides = 0
+N_nucleotides = 0
 
-# Total A, T, G, C nucleotides
+# Total A, T, G, C, N nucleotides
 sum_count = 0
 x = 0
 
@@ -89,7 +90,14 @@ for bp in seq:
         G_nucleotides = G_nucleotides + 1
     
     if bp == 'C':  
-        C_nucleotides = C_nucleotides + 1  
+        C_nucleotides = C_nucleotides + 1
+        
+    if bp == 'N':  
+        N_nucleotides = N_nucleotides + 1  
+
+
+
+
 
 
 # Computes AT/GC Ratio
@@ -115,10 +123,12 @@ print 'G nucleotides:', G_nucleotides
 print 'C nucleotides:', C_nucleotides
 print 'A nucleotides:', A_nucleotides
 print 'T nucleotides:', T_nucleotides
-print 'Sum count:', G_nucleotides + C_nucleotides + A_nucleotides + T_nucleotides
+print 'N nucleotides:', N_nucleotides
+print 'Sum count:', G_nucleotides + C_nucleotides + A_nucleotides + T_nucleotides + N_nucleotides
 print 'Total count:', total_count
 print 'seq length:', len(seq)
 print 'AT/GC Ratio:', float(ATGC_Ratio)
 print 'GC Classification:', x
 
 #Riley McGavik conceptulizing DNA, Nucleotides/understanding base pairs/BP's
+# N_nucleotides represent the disrepency. Possibly standing for unknown Basepairs.
