@@ -1,0 +1,15 @@
+What am I trying to do with this project?:
+* From a internet source.. Twitter/Facebook/Newspaper articles..etc. gather text. I.E. the last 10 
+* Tweets from various sources. Take those tweets and convert them into text. Take that text and either use a markov chain to
+* combine them and create pseudo-random text/poetry clippings. 
+* Or use an allgorithm to see what words are said the most, or what is trending in the small sample size of tweets being drawn from. 
+
+What I need for project:
+
+* Web Scraping program/code. Specifically for twitter?
+* Markov Generator program/code to take text and randomize it into abstrast poetry/text?
+* Weighted algorithm for words that appear the most?
+
+Questions:
+* Both these exsist. Create own? Take and edit exsisting code?
+* Manually fetch or automatically fetch and run?
