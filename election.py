@@ -35,7 +35,6 @@ def state_edges(election_result_rows):
 	edge = float(election_result_rows[i]['Dem']) - float(election_result_rows[i]['Rep']) 
 	state_edges[(election_result_rows[i]['State'])] = edge
    
-    pprint(state_edges)
     return state_edges
 
  
