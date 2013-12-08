@@ -10,7 +10,7 @@ markov2 = hashtaggen.Hashtag(file2)
 
 for i in range(1):
 	print ''
-	print markov.generate_markov_text(), '#', markov2.generate_markov_text() 
+	print markov.generate_markov_text() + ".", '#', markov2.generate_markov_text() 
 	print ''
 
  
