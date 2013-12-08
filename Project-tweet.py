@@ -1,5 +1,5 @@
-file1 = open('/Users/Barrob16/Documents/Project/htweet.txt')
-file2 = open('/Users/Barrob16/Documents/Project/hhashtag.txt')
+file1 = open('/Users/Barrob16/Documents/Project/tweet.txt')
+file2 = open('/Users/Barrob16/Documents/Project/hashtag.txt')
 
 import markovgen
 import hashtaggen
